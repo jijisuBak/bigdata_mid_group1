@@ -8,4 +8,8 @@ public class GitTest2 {
 	public void gitTest3() {
 		System.out.println("깃허브 연동 테스트 3");
 	}
+	
+	public void gitTest4() {
+		System.out.println("깃허브 연동 테스트 4 학원");
+	}
 }
