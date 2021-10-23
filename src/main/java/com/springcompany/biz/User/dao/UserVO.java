@@ -10,5 +10,6 @@ public class UserVO {
 	private String name;
 	private int profileImageKey;
 	private String address;
-	private List<PetVO> petList;
+	private List<PetVO> managePetList;
+	private List<PetVO> followPetList;
 }
