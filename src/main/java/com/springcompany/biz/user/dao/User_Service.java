@@ -1,4 +1,4 @@
-package com.springcompany.biz.User.dao;
+package com.springcompany.biz.user.dao;
 
 public interface User_Service {
 	

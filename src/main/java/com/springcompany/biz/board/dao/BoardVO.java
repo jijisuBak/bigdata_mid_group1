@@ -1,4 +1,4 @@
-package com.springcompany.biz.Board.dao;
+package com.springcompany.biz.board.dao;
 
 public class BoardVO {
 	private int seq;

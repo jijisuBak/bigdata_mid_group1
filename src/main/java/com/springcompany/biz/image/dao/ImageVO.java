@@ -40,4 +40,13 @@ public class ImageVO {
 	public void setUploadDate(Date uploadDate) {
 		this.uploadDate = uploadDate;
 	}
+	
+	@Override
+	public String toString() {
+		String value = "ImageVO[imageKey="+imageKey+", masterId="+masterId+", tagList="+tagList
+					+", takenPhotoDate="+takenPhotoDate+", uploadDate="+uploadDate+"]";
+		
+		return value;
+	}
+	
 }

@@ -1,4 +1,4 @@
-package com.springcompany.biz.User.dao;
+package com.springcompany.biz.user.dao;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
