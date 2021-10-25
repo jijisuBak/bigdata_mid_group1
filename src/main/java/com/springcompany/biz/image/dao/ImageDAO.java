@@ -7,5 +7,5 @@ public interface ImageDAO {
 	public void insert(ImageVO vo) throws Exception;
 	
 	public List<ImageVO> select() throws Exception;
-	
-	}
+
+}
