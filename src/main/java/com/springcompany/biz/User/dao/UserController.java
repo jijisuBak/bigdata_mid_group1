@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class UserController{
 	
 	// 계정 추가
-	@RequestMapping
+	@RequestMapping()
 	public String AddUser() {
 		
 		// 회원가입 후 세션에 로그인 정보 등록한 후에 홈페이지로 redirect 작업
@@ -17,7 +17,7 @@ public class UserController{
 	}
 	
 	// 계정 수정
-	@RequestMapping
+	@RequestMapping()
 	public String UpdateUser() {
 		
 		
@@ -26,7 +26,7 @@ public class UserController{
 	
 	
 	// 계정 삭제
-	@RequestMapping
+	@RequestMapping()
 	public String DeleteUser() {
 		
 		
@@ -35,13 +35,13 @@ public class UserController{
 	
 	
 	// 로그인 폼
-	@RequestMapping(value = "" , method = RequestMethod.GET)
+	@RequestMapping(value = "login.do" , method = RequestMethod.GET)
 	public String LogIn() {
 		return "login"; //(로그인 페이지로 재요청.) (Resolver prefix(/WEB_INF/views) , subfix(.jsp) 세팅
 	}
 	
 	// 로그인 처리
-	@RequestMapping(value = "" , method = RequestMethod.POST)
+	@RequestMapping(value = "login.do" , method = RequestMethod.POST)
 	public String LogIn(UserVO vo) {
 		//user_Service.Login(vo);
 		
