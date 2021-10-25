@@ -5,10 +5,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class UserDAO {
 	
-<<<<<<< Updated upstream
-	
-=======
->>>>>>> Stashed changes
 	public void addUser() {
 		
 	}

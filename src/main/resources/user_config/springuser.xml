@@ -10,7 +10,4 @@
 	
 	<select id="selectDAO" resultType="user"></select>
 
-
-
-
 </mapper>

@@ -4,48 +4,32 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
-<<<<<<< Updated upstream
 
-<context:property-placeholder location="classpath:jdbc.properties"/>
-<!-- 값이 객체일 경우 => ref , 문자형 일 경우 => value -->
-<bean id = "DataSource" class="org.apache.commons.dbcp.BasicDataSource">
-	<property name="driverClassName" value="${jdbc_driver}"/>
-	<property name="url" value="${jdbc_url}"/>
-	<property name="username" value="${jdbc_name}"/>
-	<property name="password" value="${jbdc_password}"/>
-</bean>
+	<context:component-scan base-package="com.springproject.biz" />
 
-<bean id="session" class="org.mybatis.spring.SqlSessionFactoryBean">
-	<property name="dataSource" ref="DataSource"/>
-</bean>
+	<context:property-placeholder location="classpath:database_config/jdbc.properties"/>
+	
+	<bean id = "DataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${jdbc_driver}"/>
+		<property name="url" value="${jdbc_url}"/>
+		<property name="username" value="${jdbc_name}"/>
+		<property name="password" value="${jbdc_password}"/>
+	</bean>
+	
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<bean id="session" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="DataSource"/>
+	</bean>
+	
+	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="session"/>
+	</bean>
 
-<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
-	<constructor-arg ref="session"/>
-</bean>
-=======
->>>>>>> Stashed changes
-
-<context:property-placeholder location="/jdbc.properties"/>
-<!-- 값이 객체일 경우 => ref , 문자형 일 경우 => value -->
-<bean id = "DataSource" class="org.apache.commons.dbcp.BasicDataSource">
-	<property name="driverClassName" value="${jdbc_driver}"/>
-	<property name="url" value="${jdbc_url}"/>
-	<property name="username" value="${jdbc_name}"/>
-	<property name="password" value="${jbdc_password}"/>
-</bean>
-
-<bean id="session" class="org.mybatis.spring.SqlSessionFactoryBean">
-	<property name="dataSource" ref="DataSource"/>
-</bean>
-
-<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
-	<constructor-arg ref="session"/>
-</bean>
-
-
-
-<bean id="" class="org.mybatis.spring.SqlSessionFactoryBean">
-	<property name="dataSource" ref=""></property>
-</bean>
+	<bean id="" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref=""></property>
+	</bean>
 
 </beans>
