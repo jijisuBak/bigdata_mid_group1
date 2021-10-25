@@ -5,5 +5,4 @@ public class BoardVO {
 	private String title;
 	private String masterId;
 	private String content;
-	
 }
