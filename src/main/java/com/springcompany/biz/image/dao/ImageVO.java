@@ -9,5 +9,4 @@ public class ImageVO {
 	private Set<String> tagList;
 	private Date takenPhotoDate;
 	private Date uploadDate;
-	
 }
