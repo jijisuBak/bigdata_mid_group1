@@ -3,7 +3,7 @@
 
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.springproject.biz.board.dao.BoardVO" alias="user"/>
+		<typeAlias type="com.springcompany.biz.board.dao.BoardVO" alias="user"/>
 	</typeAliases>
 	<mappers>
 		<mapper resource="myBatis_mapping/user_mapping.xml"/>
