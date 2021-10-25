@@ -6,7 +6,7 @@ import java.util.Set;
 public class ImageVO {
 	private int imageKey;
 	private String masterId;
+	private Set<String> tagList;
 	private Date takenPhotoDate;
 	private Date uploadDate;
-	private Set<String> tagList;
 }
