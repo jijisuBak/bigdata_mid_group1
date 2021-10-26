@@ -21,5 +21,6 @@
 
 		var map = new kakao.maps.Map(container, options);
 	</script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e6bc93df7e7e40fee18525f23ec8fe22&libraries=services,clusterer,drawing"></script>
 </body>
 </html>
