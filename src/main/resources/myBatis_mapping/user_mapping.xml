@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC
+	"-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
 <mapper namespace="UserDAO">
 
-	<insert id="insertDAO"></insert>
+	<insert id="insertDAO">
+		<![CDATA[
+		
+		]]>
+	</insert>
+		
+	<update id="updateDAO">
+		<![CDATA[
+		
+		]]>
+	</update>
 	
-	<update id="updateDAO"></update>
+	<delete id="deleteDAO">
+		<![CDATA[
+		
+		]]>
+	</delete>
 	
-	<delete id="deleteDAO"></delete>
-	
-	<select id="selectDAO" resultType="user"></select>
+	<select id="selectDAO" resultType="user">
+		<![CDATA[
+		
+		]]>
+	</select>
 
 </mapper>
