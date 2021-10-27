@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface ImageService {
 	
-	public void insert(ImageVO vo);
+	public void insert(ImageVO vo) throws Exception;
 	
 	public List<ImageVO> selectList(ImageVO vo);
 	
@@ -13,5 +13,6 @@ public interface ImageService {
 	public void update(ImageVO vo);
 	
 	public void delete(ImageVO vo);
+
 
 }
