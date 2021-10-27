@@ -19,5 +19,4 @@ public class ImageRowMapper implements RowMapper<ImageVO>{
 		
 		return image;
 	}
-
 }

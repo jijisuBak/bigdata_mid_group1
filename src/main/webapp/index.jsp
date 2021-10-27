@@ -7,7 +7,7 @@
 	<title>Insert title here</title>
 </head>
 <body>
-	<% response.sendRedirect("/WEB-INF/views/maptemplate.jsp"); %>
+	<% response.sendRedirect("/WEB-INF/views/home.jsp"); %>
 	
 	
 </body>
