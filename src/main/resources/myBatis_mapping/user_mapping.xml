@@ -17,6 +17,12 @@
 		]]>
 	</update>
 	
+	<update id="updatePW">
+		<![CDATA[
+		update table member set pw = {#pw} where id = {#id} 
+		]]>
+	</update>
+	
 	<delete id="deleteDAO">
 		<![CDATA[
 		

@@ -8,7 +8,9 @@ public interface UserService {
 	
 	public void deleteService(String args); // 계정 삭제(회원탈퇴)
 	
-	public void getService(UserVO vo);
+	public void updatePwService(UserVO vo); //비밀번호 수정
+	
+	public UserVO getService(UserVO vo);
 	
 	public void addPetService();
 	

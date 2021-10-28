@@ -1,4 +1,4 @@
-package com.springcompany.prz.controller;
+package com.springcompany.biz.controller;
 
 import java.io.File;
 import java.io.IOException;
