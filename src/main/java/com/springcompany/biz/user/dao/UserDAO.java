@@ -18,12 +18,16 @@ public class UserDAO {
 		
 	}
 	
+	public void updateUserPw(UserVO vo) {
+		mybatis.update("UserDAO.updatePW", vo);
+	}
+	
 	public void deleteUser() {
 		
 	}
 	
-	public void selectUser() {
-		
+	public UserVO selectUser(UserVO vo) {
+		return null;
 	}
 	
 	public void insertPet() {

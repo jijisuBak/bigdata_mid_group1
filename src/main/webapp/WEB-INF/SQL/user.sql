@@ -8,5 +8,4 @@ create table member(
 	email varchar2(20) ,
 	
 
-
 )

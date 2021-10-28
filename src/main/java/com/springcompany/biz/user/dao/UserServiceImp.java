@@ -23,10 +23,14 @@ public class UserServiceImp implements UserService {
 	public void deleteService(String args) {
 		userDAO.deleteUser(vo);
 	}
+	
+	public void updatePwService(UserVO vo) {
+		userDAO.updateUserPw(vo);
+	}
 
 	@Override
-	public void getService(UserVO vo) {
-		
+	public UserVO getService(UserVO vo) {
+		return userDAO.selectUser(vo);
 	}
 
 	public void addPetService() {
@@ -40,13 +44,8 @@ public class UserServiceImp implements UserService {
 	public void addFollowService() {
 		userDAO.insertFollow();
 	}
-	
 
-	@Override
 	public void deleteFollowService() {
 		userDAO.deleteFollow();
 	}
-	
-	
-	
 }
