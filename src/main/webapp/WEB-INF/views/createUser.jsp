@@ -45,7 +45,7 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center" cellpadding = "100" cellspacing = "200px">
-					<a href="javascript:" >Create Membership</a> <!-- 추후에 회원가입 , 뒤로 가기 코드 작성. -->
+					<a href="javascript: " >Create Membership</a> <!-- 추후에 회원가입 , 뒤로 가기 코드 작성. -->
 					<a href="javascript:"> Return </a>
 				</td>
 			</tr>
